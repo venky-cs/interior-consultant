@@ -53,7 +53,7 @@
                     </div>
 
                     <div class="card-body">
-                        <h3>designed in 2020 by Aliza Webber</h3>
+                        <h3>Designed in 2020 by Aliza Webber</h3>
                     </div>
 
                 </div>
@@ -77,8 +77,9 @@
         })
 
         const close = document.querySelector('.close')
-        close.addEventListener('click',() => {
-            navUl.classList.toggle('show')
+        close.addEventListener('click',(e) => {
+            navUl.classList.toggle('show');
+            window.location.reload()
         })
     </script>
 </body>
