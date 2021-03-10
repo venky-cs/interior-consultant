@@ -49,7 +49,7 @@
 
         <div class="right">
           <img src="./img/photo1.png" alt="" />
-          <div class="card">
+          <div class="card" id="card">
             <div class="card-title">
               <img src="./img/photo2.png" alt="" />
               <div class="card-content">
@@ -73,15 +73,18 @@
     <script>
       const hamburger = document.querySelector('.hamburger');
       const navUl = document.querySelector('.nav-ul');
+      const card = document.querySelector('#card')
 
       hamburger.addEventListener('click', () => {
         console.log('clicked');
         navUl.classList.toggle('show');
+        card.classList.remove('card')
       });
 
       const close = document.querySelector('.close');
       close.addEventListener('click', (e) => {
         navUl.classList.toggle('show');
+        card.classList.add('card')
       });
     </script>
   </body>
