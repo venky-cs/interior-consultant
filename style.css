@@ -8,8 +8,7 @@
 body {
   height: 90vh;
   margin: auto;
-  background-color:#181719;
-  ;
+  background-color: #181719;
   color: white;
 }
 
@@ -29,18 +28,16 @@ body {
   margin-bottom: 10px;
 }
 
-
 .title h3 {
   text-transform: uppercase;
   padding: 10px;
   border: 2px solid white;
-  font-family: 'Crimson Pro',
-  serif;
+  font-family: 'Crimson Pro', serif;
   font-weight: 200;
   font-size: 14px;
 }
 
-.close{
+.close {
   display: none;
 }
 
@@ -53,9 +50,10 @@ body {
   font-size: 20px;
 }
 
-.hamburger:focus, .close:focus{
-    outline: none;
-    cursor: pointer;
+.hamburger:focus,
+.close:focus {
+  outline: none;
+  cursor: pointer;
 }
 
 .nav ul li {
@@ -69,8 +67,7 @@ body {
   margin-right: 50px;
   color: white;
   text-align: center;
-  font-family: 'Montserrat',
-  sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   font-size: 18px;
 }
@@ -86,49 +83,52 @@ img {
 .main {
   display: flex;
   justify-content: space-between;
-  margin: 20px auto auto auto;
 }
 .left {
   flex: 0.3;
+  width: 100%;
+  height: 100%;
+  margin: auto;
 }
 .left h2 {
   font-size: 50px;
   margin: 25px 0;
-  font-family: 'Lora',
-  serif;
+  font-family: 'Lora', serif;
   font-weight: 400;
   font-size: 48px;
 }
 .left p {
   line-height: 1.4;
-  font-family: 'Montserrat',
-  sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 300;
   font-size: 24px;
   margin: 40px 0;
 }
 .left button {
-  background-color:#181719;
+  background-color: #181719;
   color: white;
   padding: 10px;
   transition: all 1s ease-in-out;
   margin-bottom: 30px;
-  font-family: 'Montserrat',
-  sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   font-size: 18px;
   border: 5%;
+  outline: none;
 }
 
 .right {
   flex: 0.6;
+  width: 100%;
+  height: 100%;
+  margin-top: 90px;
 }
 
 .card {
   position: relative;
   width: 320px;
   border: 2px solid black;
-  background-color:#181719;
+  background-color: #181719;
   color: white;
   padding: 14px;
   bottom: 100px;
@@ -148,80 +148,104 @@ img {
   width: 50%;
   margin: auto 0;
 }
-.card-content h4{
-  font-family: 'Montserrat',
-  sans-serif;
-  font-weight:500;
+.card-content h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
   font-size: 14px;
 }
 
-.card-content p{
-  font-family: 'Montserrat',
-  sans-serif;
-  font-weight:500;
+.card-content p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
   font-size: 12px;
 }
 
-.card-body h3{
-  font-family: 'Lora',
-  serif;
-  font-weight:700;
+.card-body h3 {
+  font-family: 'Lora', serif;
+  font-weight: 700;
   font-size: 24px;
 }
 footer p {
   text-align: center;
   color: grey;
-  font-family: 'Montserrat',
-  sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   font-size: 14px;
 }
 
+@media (max-width: 1280px) {
+  .left {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+  }
+  .left h2 {
+    font-size: 35px;
+  }
+  .left p {
+    font-size: 20px;
+  }
+  .left button {
+    font-size: 14px;
+  }
 
+  .right {
+    flex: 0.6;
+    width: 100%;
+    height: 80%;
+    margin-top: 50px;
+  }
+
+  .card {
+    position: relative;
+    width: 320px;
+    left: 180px;
+  }
+  .card-body h3 {
+    font-size: 14px;
+    text-align: center;
+  }
+}
 
 @media (max-width: 1024px) {
   .nav-ul {
     display: none;
     flex-direction: column;
   }
-  .nav-ul.show{
-      display: flex;
-      position: absolute;
-      width: 100%;
-      background-color: rgba(0, 0, 0, 0.678);
-      height: 100vh;
-      overflow: hidden !important;
-      top: 0;
-      left: 0;
-      right: 0;
-   
-
-      align-items: center;
-      justify-content: center;
-      font-size: 30px;
-      line-height: 2.5em;
-
-      transform: rotate(360deg left);
-
+  .nav-ul.show {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.678);
+    height: 100vh;
+    overflow: hidden !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    line-height: 2.5em;
+    transform: rotate(360deg left);
   }
   .hamburger {
     display: block !important;
   }
-  
+
   .close {
     display: block;
-  background-color: black;
-  position: fixed;
-  top: 0;
-  bottom: 90%;
-  right: 0;
-  color: white;
-  cursor: pointer;
-  font-size: 20px;
-  width: 100px;
-  border: none;
-  outline: none;
-}
+    background-color: black;
+    position: fixed;
+    top: 0;
+    bottom: 90%;
+    right: 0;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    width: 100px;
+    border: none;
+    outline: none;
+  }
   .main {
     display: flex;
     flex-direction: column;
@@ -247,7 +271,7 @@ footer p {
     line-height: 1.4;
     font-size: 15px;
   }
-  .left button{
+  .left button {
     font-size: 14px;
   }
   .card-content h4 {
@@ -263,6 +287,7 @@ footer p {
   .card {
     position: relative;
     left: 40px;
+    bottom: 40px;
     width: 80%;
   }
   footer {

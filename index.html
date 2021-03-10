@@ -1,84 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>interior-consultant</title>
-    <link rel="icon" href="./img/devchallenges.png">
-    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./img/devchallenges.png" />
+    <link rel="stylesheet" href="style.css" />
 
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    />
+  </head>
+  <body>
     <div class="container">
-        <div class="header">
-            <div class="title">
-                <h3>this interior</h3>
-            </div>
-
-            <div class="nav">
-                <button class="hamburger">
-                    <ii class="fas fa-bars"></ii>
-                </button>
-                <ul class="nav-ul">
-                    <button class="close">
-                        <i class="fa fa-times-circle" aria-hidden="true"></i>
-                    </button>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Collection</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
+      <div class="header">
+        <div class="title">
+          <h3>this interior</h3>
         </div>
+
+        <div class="nav">
+          <button class="hamburger">
+            <ii class="fas fa-bars"></ii>
+          </button>
+          <ul class="nav-ul">
+            <button class="close">
+              <i class="fa fa-times-circle" aria-hidden="true"></i>
+            </button>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Collection</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div>
     </div>
 
     <div class="container">
-        <div class="main">
-            <div class="left">
-                <h2>Modern interior</h2>
-                <p>A full Service residential & commercial interior design and staging company offering professional organizing & eco-services</p>
-                <button>Read more -></button>
-            </div>
-
-            <div class="right">
-                <img src="./img/photo1.png" alt="">
-                <div class="card">
-                    <div class="card-title">
-                        <img src="./img/photo2.png" alt="">
-                        <div class="card-content">
-                            <h4>Aliza Webber</h4>
-                            <p>Interior designer</p>
-                        </div>
-                    </div>
-
-                    <div class="card-body">
-                        <h3>Designed in 2020 by Aliza Webber</h3>
-                    </div>
-
-                </div>
-            </div>
+      <div class="main">
+        <div class="left">
+          <h2>Modern interior</h2>
+          <p>
+            A full Service residential & commercial interior design and staging
+            company offering professional organizing & eco-services
+          </p>
+          <button>Read more -></button>
         </div>
+
+        <div class="right">
+          <img src="./img/photo1.png" alt="" />
+          <div class="card">
+            <div class="card-title">
+              <img src="./img/photo2.png" alt="" />
+              <div class="card-content">
+                <h4>Aliza Webber</h4>
+                <p>Interior designer</p>
+              </div>
+            </div>
+
+            <div class="card-body">
+              <h3>Designed in 2020 by Aliza Webber</h3>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <footer>
-        <p>venky-cs @ DevChallengers.io</p>
+      <p>venky-cs @ DevChallengers.io</p>
     </footer>
 
     <script>
-        const hamburger = document.querySelector('.hamburger')
-        const navUl = document.querySelector('.nav-ul')
-        
+      const hamburger = document.querySelector('.hamburger');
+      const navUl = document.querySelector('.nav-ul');
 
-        hamburger.addEventListener('click', () => {
-            console.log('clicked')
-            navUl.classList.toggle('show');
-        })
+      hamburger.addEventListener('click', () => {
+        console.log('clicked');
+        navUl.classList.toggle('show');
+      });
 
-        const close = document.querySelector('.close')
-        close.addEventListener('click',(e) => {
-            navUl.classList.toggle('show');
-        })
+      const close = document.querySelector('.close');
+      close.addEventListener('click', (e) => {
+        navUl.classList.toggle('show');
+      });
     </script>
-</body>
+  </body>
 </html>
