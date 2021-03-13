@@ -76,7 +76,7 @@ a:hover {
   background-color: blue;
 }
 
-img {
+.right img {
   width: 100%;
 }
 
@@ -255,6 +255,7 @@ footer p {
     position: relative;
     left: 70px;
     width: 80%;
+    height: 150px;
   }
 }
 
