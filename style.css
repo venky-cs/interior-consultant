@@ -138,6 +138,10 @@ a:hover {
   left: 380px;
   box-shadow: 0 4px 20px rgba(41, 42, 43, 0.925);
 }
+.card-wrapper{
+  display:block;
+  width: 100%;
+}
 .card-title {
   display: flex;
   text-align: center;
