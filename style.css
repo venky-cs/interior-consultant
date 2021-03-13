@@ -79,6 +79,9 @@ a:hover {
 .right img {
   width: 100%;
 }
+.card .card-title img{
+  width: 55px;
+}
 
 .main {
   display: flex;
