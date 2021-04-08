@@ -79,7 +79,7 @@ a:hover {
 .right img {
   width: 100%;
 }
-.card .card-title img{
+.card .card-title img {
   width: 55px;
 }
 
@@ -138,8 +138,8 @@ a:hover {
   left: 380px;
   box-shadow: 0 4px 20px rgba(41, 42, 43, 0.925);
 }
-.card-wrapper{
-  display:block;
+.card-wrapper {
+  display: block;
   width: 100%;
 }
 .card-title {
@@ -170,7 +170,7 @@ a:hover {
 .card-body h3 {
   font-family: 'Lora', serif;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 18px;
 }
 footer p {
   text-align: center;
@@ -261,8 +261,8 @@ footer p {
   .card {
     position: relative;
     left: 70px;
-    width: 80%;
-    height: 150px;
+    /* width: 50%; */
+    /* height: 150px; */
   }
 }
 
@@ -297,7 +297,7 @@ footer p {
     position: relative;
     left: 40px;
     bottom: 40px;
-    width: 80%;
+    width: 85%;
   }
   footer {
     width: 80%;
